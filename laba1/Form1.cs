@@ -36,7 +36,12 @@ namespace laba1
             label11.Text = "Result: ";
             lblResult3.Text = "";
             btnOK3.Text = "Generate";
-            
+            label12.Text = "a = ";
+            label13.Text = "b = ";
+            label14.Text = "c = ";
+            label15.Text = "Result: ";
+            lblResult4.Text = "";
+            btnOK4.Text = "Generate";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -141,6 +146,89 @@ namespace laba1
         private void tabPage4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtaa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtbb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void btnOK4_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(txtfirst.Text);
+            double second = Convert.ToDouble(txtsecond.Text);
+            double third = Convert.ToDouble(txtthird.Text);
+            bool Positive = (first + second > 0) ||(first + third > 0) || (second + third > 0);
+            if (Positive)
+            {
+                lblResult4.Text = "Sum of one is positive";
+            }
+            else 
+            { lblResult4.Text = "Sum of any is negative"; }
+        }
+
+        private void txtfirst_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtsecond_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtthird_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
         }
     }
 }
