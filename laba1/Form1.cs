@@ -29,16 +29,19 @@ namespace laba1
             label6.Text = "Result: ";
             lblResult2.Text = " ";
             btnOk2.Text = "Generate";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            label7.Text = "a = ";
+            label8.Text = "b = ";
+            label9.Text = "c = ";
+            label10.Text = "d = ";
+            label11.Text = "Result: ";
+            lblResult3.Text = "";
+            btnOK3.Text = "Generate";
             
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -46,13 +49,13 @@ namespace laba1
             double x = Convert.ToDouble(txtX.Text);
             double result = (Math.Log(Math.Abs(Math.Cos(x))) / Math.Log(1 + Math.Pow(x, 2)));
             lblResult.Text = result.ToString();
-            
+
         }
 
         private void textX_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
-            {                     return;             }
+            { return; }
             e.Handled = true;
         }
 
@@ -71,8 +74,73 @@ namespace laba1
             double a = Convert.ToDouble(txtA.Text);
             double b = Convert.ToDouble(txtB.Text);
             double y = Convert.ToDouble(txty.Text);
-            double result2 = (((a * b) / 2) * (Math.Sin(y* Math.PI/180)));
+            double result2 = (((a * b) / 2) * (Math.Sin(y * Math.PI / 180)));
             lblResult2.Text = result2.ToString();
+        }
+
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+                e.Handled = true;
+        }
+
+        private void txtB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void btnOK3_Click(object sender, EventArgs e)
+        {
+            double aa = Convert.ToDouble(txtaa.Text);
+            double bb = Convert.ToDouble(txtbb.Text);
+            double c = Convert.ToDouble(txtcc.Text);
+            double d = Convert.ToDouble(txtdd.Text);
+            double check1 = (aa / c);
+            double check2 = (bb / d);
+            double check3 = (aa / d);
+            double check4 = (bb / c);
+            if (check1 == check2)
+            { lblResult3.Text = "true"; }
+            else if (check3 == check4)
+            { lblResult3.Text = "true"; }
+            else { lblResult3.Text = "false"; }
+            
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
