@@ -42,6 +42,9 @@ namespace laba1
             label15.Text = "Result: ";
             lblResult4.Text = "";
             btnOK4.Text = "Generate";
+            lblResult5.Text = "";
+            label16.Text = "Result: ";
+            btnOK5.Text = "Generate";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -229,6 +232,41 @@ namespace laba1
             if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
             { return; }
             e.Handled = true;
+        }
+
+        private void btnOK5_Click(object sender, EventArgs e)
+        {
+            for (int age = 100; age <= 150; age++)
+            {
+                for (int day = 1; day <= 31; day++)
+                {
+                    if (IsCorrectAge(age, day))
+                    {
+                        string age2 = Convert.ToString(age);
+                        lblResult5.Text = age2;
+                        return;
+                    }
+                }
+            }
+            int CalculateSumOfSquares(int number)
+            {
+                int sum = 0;
+                while (number > 0)
+                {
+                    int digit = number % 10;
+                    sum += digit * digit;
+                    number /= 10;
+                }
+                return sum;
+            }
+            bool IsCorrectAge(int age, int day)
+            {
+                int sumOfSquares = CalculateSumOfSquares(age);
+                int result = sumOfSquares + day;
+                return result == age;
+
+            }
+            
         }
     }
 }

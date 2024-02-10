@@ -73,8 +73,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lblResult5 = new System.Windows.Forms.Label();
+            this.btnOK5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,6 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -524,6 +530,10 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnOK5);
+            this.tabPage5.Controls.Add(this.lblResult5);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.pictureBox5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -531,6 +541,15 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Task5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(66, 33);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(945, 108);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // tabPage6
             // 
@@ -551,6 +570,34 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Task7";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(154, 324);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "label16";
+            // 
+            // lblResult5
+            // 
+            this.lblResult5.AutoSize = true;
+            this.lblResult5.Location = new System.Drawing.Point(328, 324);
+            this.lblResult5.Name = "lblResult5";
+            this.lblResult5.Size = new System.Drawing.Size(41, 13);
+            this.lblResult5.TabIndex = 2;
+            this.lblResult5.Text = "label17";
+            // 
+            // btnOK5
+            // 
+            this.btnOK5.Location = new System.Drawing.Point(331, 405);
+            this.btnOK5.Name = "btnOK5";
+            this.btnOK5.Size = new System.Drawing.Size(92, 25);
+            this.btnOK5.TabIndex = 3;
+            this.btnOK5.Text = "button1";
+            this.btnOK5.UseVisualStyleBackColor = true;
+            this.btnOK5.Click += new System.EventHandler(this.btnOK5_Click);
             // 
             // Form1
             // 
@@ -574,6 +621,9 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -626,6 +676,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnOK5;
+        private System.Windows.Forms.Label lblResult5;
+        private System.Windows.Forms.Label label16;
     }
 }
 
