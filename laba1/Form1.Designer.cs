@@ -73,12 +73,24 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnOK5 = new System.Windows.Forms.Button();
+            this.lblResult5 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnOK6 = new System.Windows.Forms.Button();
+            this.txtb6_2 = new System.Windows.Forms.TextBox();
+            this.txtb6_1 = new System.Windows.Forms.TextBox();
+            this.txta6_2 = new System.Windows.Forms.TextBox();
+            this.txta6_1 = new System.Windows.Forms.TextBox();
+            this.lblResult6 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.lblResult5 = new System.Windows.Forms.Label();
-            this.btnOK5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,6 +102,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -542,6 +556,34 @@
             this.tabPage5.Text = "Task5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // btnOK5
+            // 
+            this.btnOK5.Location = new System.Drawing.Point(331, 405);
+            this.btnOK5.Name = "btnOK5";
+            this.btnOK5.Size = new System.Drawing.Size(92, 25);
+            this.btnOK5.TabIndex = 3;
+            this.btnOK5.Text = "button1";
+            this.btnOK5.UseVisualStyleBackColor = true;
+            this.btnOK5.Click += new System.EventHandler(this.btnOK5_Click);
+            // 
+            // lblResult5
+            // 
+            this.lblResult5.AutoSize = true;
+            this.lblResult5.Location = new System.Drawing.Point(328, 324);
+            this.lblResult5.Name = "lblResult5";
+            this.lblResult5.Size = new System.Drawing.Size(41, 13);
+            this.lblResult5.TabIndex = 2;
+            this.lblResult5.Text = "label17";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(154, 324);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "label16";
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
@@ -553,6 +595,18 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.btnOK6);
+            this.tabPage6.Controls.Add(this.txtb6_2);
+            this.tabPage6.Controls.Add(this.txtb6_1);
+            this.tabPage6.Controls.Add(this.txta6_2);
+            this.tabPage6.Controls.Add(this.txta6_1);
+            this.tabPage6.Controls.Add(this.lblResult6);
+            this.tabPage6.Controls.Add(this.label22);
+            this.tabPage6.Controls.Add(this.label19);
+            this.tabPage6.Controls.Add(this.label20);
+            this.tabPage6.Controls.Add(this.label18);
+            this.tabPage6.Controls.Add(this.label17);
+            this.tabPage6.Controls.Add(this.pictureBox6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -560,6 +614,111 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Task6";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // btnOK6
+            // 
+            this.btnOK6.Location = new System.Drawing.Point(243, 435);
+            this.btnOK6.Name = "btnOK6";
+            this.btnOK6.Size = new System.Drawing.Size(106, 26);
+            this.btnOK6.TabIndex = 11;
+            this.btnOK6.Text = "button1";
+            this.btnOK6.UseVisualStyleBackColor = true;
+            this.btnOK6.Click += new System.EventHandler(this.btnOK6_Click);
+            // 
+            // txtb6_2
+            // 
+            this.txtb6_2.Location = new System.Drawing.Point(243, 333);
+            this.txtb6_2.Name = "txtb6_2";
+            this.txtb6_2.Size = new System.Drawing.Size(117, 20);
+            this.txtb6_2.TabIndex = 10;
+            this.txtb6_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtb6_2_KeyPress);
+            // 
+            // txtb6_1
+            // 
+            this.txtb6_1.Location = new System.Drawing.Point(243, 282);
+            this.txtb6_1.Name = "txtb6_1";
+            this.txtb6_1.Size = new System.Drawing.Size(117, 20);
+            this.txtb6_1.TabIndex = 9;
+            this.txtb6_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtb6_1_KeyPress);
+            // 
+            // txta6_2
+            // 
+            this.txta6_2.Location = new System.Drawing.Point(243, 230);
+            this.txta6_2.Name = "txta6_2";
+            this.txta6_2.Size = new System.Drawing.Size(117, 20);
+            this.txta6_2.TabIndex = 8;
+            this.txta6_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txta6_2_KeyPress);
+            // 
+            // txta6_1
+            // 
+            this.txta6_1.Location = new System.Drawing.Point(243, 184);
+            this.txta6_1.Name = "txta6_1";
+            this.txta6_1.Size = new System.Drawing.Size(117, 20);
+            this.txta6_1.TabIndex = 7;
+            this.txta6_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txta6_1_KeyPress);
+            // 
+            // lblResult6
+            // 
+            this.lblResult6.AutoSize = true;
+            this.lblResult6.Location = new System.Drawing.Point(240, 390);
+            this.lblResult6.Name = "lblResult6";
+            this.lblResult6.Size = new System.Drawing.Size(41, 13);
+            this.lblResult6.TabIndex = 6;
+            this.lblResult6.Text = "label21";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(132, 390);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "label22";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(132, 289);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "label19";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(132, 340);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "label20";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(132, 237);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "label18";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(132, 187);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 13);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "label17";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(24, 18);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(961, 100);
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // tabPage7
             // 
@@ -570,34 +729,6 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Task7";
             this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(154, 324);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "label16";
-            // 
-            // lblResult5
-            // 
-            this.lblResult5.AutoSize = true;
-            this.lblResult5.Location = new System.Drawing.Point(328, 324);
-            this.lblResult5.Name = "lblResult5";
-            this.lblResult5.Size = new System.Drawing.Size(41, 13);
-            this.lblResult5.TabIndex = 2;
-            this.lblResult5.Text = "label17";
-            // 
-            // btnOK5
-            // 
-            this.btnOK5.Location = new System.Drawing.Point(331, 405);
-            this.btnOK5.Name = "btnOK5";
-            this.btnOK5.Size = new System.Drawing.Size(92, 25);
-            this.btnOK5.TabIndex = 3;
-            this.btnOK5.Text = "button1";
-            this.btnOK5.UseVisualStyleBackColor = true;
-            this.btnOK5.Click += new System.EventHandler(this.btnOK5_Click);
             // 
             // Form1
             // 
@@ -624,6 +755,9 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -680,6 +814,18 @@
         private System.Windows.Forms.Button btnOK5;
         private System.Windows.Forms.Label lblResult5;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtb6_2;
+        private System.Windows.Forms.TextBox txtb6_1;
+        private System.Windows.Forms.TextBox txta6_2;
+        private System.Windows.Forms.TextBox txta6_1;
+        private System.Windows.Forms.Label lblResult6;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btnOK6;
     }
 }
 

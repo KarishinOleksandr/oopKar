@@ -45,6 +45,12 @@ namespace laba1
             lblResult5.Text = "";
             label16.Text = "Result: ";
             btnOK5.Text = "Generate";
+            label17.Text = "a1";
+            label18.Text = "an";
+            label19.Text = "b1";
+            label20.Text = "bn";
+            lblResult6.Text = "";
+            btnOK6.Text = "Generate";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -266,7 +272,93 @@ namespace laba1
                 return result == age;
 
             }
+        }
+
+        private void btnOK6_Click(object sender, EventArgs e)
+        {
+
+            int a1 = int.Parse(txta6_1.Text);
+            int an = int.Parse(txta6_2.Text);
+            int b1 = int.Parse(txtb6_1.Text);
+            int bn = int.Parse(txtb6_2.Text);
+
+            int[] sequenceA = GenerateSequence(a1, an);
+            int[] sequenceB = GenerateSequence(b1, bn);
+
+            TransformSequence(sequenceA, sequenceB);
+            for (int i = 0; i < sequenceB.Length; i++)
+            {
+                lblResult6.Text = ($"b{i + 1} = {sequenceB[i]}");
+            }
+
+            int[] GenerateSequence(int start, int end)
+            {
+                int[] sequence = new int[Math.Abs(end - start) + 1];
+                for (int i = 0; i < sequence.Length; i++)
+                {
+                    sequence[i] = start + i;
+                }
+                return sequence;
+            }
+            void TransformSequence(int[] a, int[] b)
+            {
+                for (int i = 0; i < a.Length && i < b.Length; i++)
+                {
+                    if (a[i] <= 0)
+                    {
+                        b[i] *= 10;
+                    }
+                    else
+                    {
+                        b[i] = 0;
+                    }
+                }
+            }
             
+        }
+
+        private void txta6_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txta6_2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtb6_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtb6_2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
         }
     }
 }
