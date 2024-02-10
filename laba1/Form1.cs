@@ -51,6 +51,10 @@ namespace laba1
             label20.Text = "bn";
             lblResult6.Text = "";
             btnOK6.Text = "Generate";
+            label21.Text = "Input text: ";
+            label24.Text = "Result: ";
+            lblResult7.Text = " ";
+            btnOK7.Text = "Generate";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -359,6 +363,42 @@ namespace laba1
             if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
             { return; }
             e.Handled = true;
+        }
+
+        private void btnOK7_Click(object sender, EventArgs e)
+        {
+            string input_txt = txt7.Text;
+
+            int count_abc = CountABCGroups(input_txt);
+
+            string result = Convert.ToString(count_abc);
+
+            lblResult7.Text = result;
+
+            int CountABCGroups(string input)
+            {
+                int count = 0;
+
+                for (int i = 0; i < input.Length; i++)
+                {
+                    if (input[i] == 'a')
+                    {
+                        count++;
+
+                    }
+                    else if (input[i] == 'b')
+                    {
+                        count ++;
+                    }
+                    else if (input[i] == 'c')
+                    {
+                        count ++;
+                    }
+                    
+                }
+
+                return count;
+            }
         }
     }
 }

@@ -91,6 +91,12 @@
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblResult7 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.btnOK7 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +110,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -722,6 +730,12 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.btnOK7);
+            this.tabPage7.Controls.Add(this.txt7);
+            this.tabPage7.Controls.Add(this.label24);
+            this.tabPage7.Controls.Add(this.lblResult7);
+            this.tabPage7.Controls.Add(this.label21);
+            this.tabPage7.Controls.Add(this.pictureBox7);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -729,6 +743,59 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Task7";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(65, 34);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(911, 38);
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(125, 146);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "label21";
+            // 
+            // lblResult7
+            // 
+            this.lblResult7.AutoSize = true;
+            this.lblResult7.Location = new System.Drawing.Point(327, 230);
+            this.lblResult7.Name = "lblResult7";
+            this.lblResult7.Size = new System.Drawing.Size(41, 13);
+            this.lblResult7.TabIndex = 2;
+            this.lblResult7.Text = "label23";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(125, 230);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.TabIndex = 3;
+            this.label24.Text = "label24";
+            // 
+            // txt7
+            // 
+            this.txt7.Location = new System.Drawing.Point(330, 139);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(795, 20);
+            this.txt7.TabIndex = 4;
+            // 
+            // btnOK7
+            // 
+            this.btnOK7.Location = new System.Drawing.Point(330, 305);
+            this.btnOK7.Name = "btnOK7";
+            this.btnOK7.Size = new System.Drawing.Size(75, 23);
+            this.btnOK7.TabIndex = 5;
+            this.btnOK7.Text = "button1";
+            this.btnOK7.UseVisualStyleBackColor = true;
+            this.btnOK7.Click += new System.EventHandler(this.btnOK7_Click);
             // 
             // Form1
             // 
@@ -758,6 +825,9 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -826,6 +896,12 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnOK6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label lblResult7;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btnOK7;
+        private System.Windows.Forms.TextBox txt7;
+        private System.Windows.Forms.Label label24;
     }
 }
 
