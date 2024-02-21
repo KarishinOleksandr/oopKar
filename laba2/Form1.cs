@@ -383,5 +383,303 @@ namespace laba2
             }
         }
 
+        private void txtdegree_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtX_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtX2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree22_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef22_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtX3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree33_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef33_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtX4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree44_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef44_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtX5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtdegree55_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
+
+        private void txtcoef55_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
     }
 }

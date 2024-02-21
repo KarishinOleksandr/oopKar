@@ -176,6 +176,7 @@
             this.txtdegree.Name = "txtdegree";
             this.txtdegree.Size = new System.Drawing.Size(100, 20);
             this.txtdegree.TabIndex = 7;
+            this.txtdegree.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree_KeyPress);
             // 
             // txtcoef
             // 
@@ -183,6 +184,7 @@
             this.txtcoef.Name = "txtcoef";
             this.txtcoef.Size = new System.Drawing.Size(100, 20);
             this.txtcoef.TabIndex = 8;
+            this.txtcoef.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef_KeyPress);
             // 
             // txtX
             // 
@@ -190,6 +192,7 @@
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(100, 20);
             this.txtX.TabIndex = 9;
+            this.txtX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX_KeyPress);
             // 
             // tabControl1
             // 
@@ -262,6 +265,7 @@
             this.txtcoef22.Name = "txtcoef22";
             this.txtcoef22.Size = new System.Drawing.Size(100, 20);
             this.txtcoef22.TabIndex = 23;
+            this.txtcoef22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef22_KeyPress);
             // 
             // label10
             // 
@@ -278,6 +282,7 @@
             this.txtdegree22.Name = "txtdegree22";
             this.txtdegree22.Size = new System.Drawing.Size(100, 20);
             this.txtdegree22.TabIndex = 22;
+            this.txtdegree22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree22_KeyPress);
             // 
             // txtX2
             // 
@@ -285,6 +290,7 @@
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(100, 20);
             this.txtX2.TabIndex = 18;
+            this.txtX2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX2_KeyPress);
             // 
             // label5
             // 
@@ -301,6 +307,7 @@
             this.txtcoef2.Name = "txtcoef2";
             this.txtcoef2.Size = new System.Drawing.Size(100, 20);
             this.txtcoef2.TabIndex = 17;
+            this.txtcoef2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef2_KeyPress);
             // 
             // label6
             // 
@@ -317,6 +324,7 @@
             this.txtdegree2.Name = "txtdegree2";
             this.txtdegree2.Size = new System.Drawing.Size(100, 20);
             this.txtdegree2.TabIndex = 16;
+            this.txtdegree2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree2_KeyPress);
             // 
             // label7
             // 
@@ -393,6 +401,7 @@
             this.txtcoef33.Name = "txtcoef33";
             this.txtcoef33.Size = new System.Drawing.Size(100, 20);
             this.txtcoef33.TabIndex = 36;
+            this.txtcoef33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef33_KeyPress);
             // 
             // label12
             // 
@@ -409,6 +418,7 @@
             this.txtdegree33.Name = "txtdegree33";
             this.txtdegree33.Size = new System.Drawing.Size(100, 20);
             this.txtdegree33.TabIndex = 35;
+            this.txtdegree33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree33_KeyPress);
             // 
             // txtX3
             // 
@@ -416,6 +426,7 @@
             this.txtX3.Name = "txtX3";
             this.txtX3.Size = new System.Drawing.Size(100, 20);
             this.txtX3.TabIndex = 32;
+            this.txtX3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX3_KeyPress);
             // 
             // label13
             // 
@@ -432,6 +443,7 @@
             this.txtcoef3.Name = "txtcoef3";
             this.txtcoef3.Size = new System.Drawing.Size(100, 20);
             this.txtcoef3.TabIndex = 31;
+            this.txtcoef3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef3_KeyPress);
             // 
             // label14
             // 
@@ -448,6 +460,7 @@
             this.txtdegree3.Name = "txtdegree3";
             this.txtdegree3.Size = new System.Drawing.Size(100, 20);
             this.txtdegree3.TabIndex = 30;
+            this.txtdegree3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree3_KeyPress);
             // 
             // label15
             // 
@@ -525,6 +538,7 @@
             this.txtcoef44.Name = "txtcoef44";
             this.txtcoef44.Size = new System.Drawing.Size(100, 20);
             this.txtcoef44.TabIndex = 49;
+            this.txtcoef44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef44_KeyPress);
             // 
             // label18
             // 
@@ -541,6 +555,7 @@
             this.txtdegree44.Name = "txtdegree44";
             this.txtdegree44.Size = new System.Drawing.Size(100, 20);
             this.txtdegree44.TabIndex = 48;
+            this.txtdegree44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree44_KeyPress);
             // 
             // txtX4
             // 
@@ -548,6 +563,7 @@
             this.txtX4.Name = "txtX4";
             this.txtX4.Size = new System.Drawing.Size(100, 20);
             this.txtX4.TabIndex = 45;
+            this.txtX4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX4_KeyPress);
             // 
             // label19
             // 
@@ -564,6 +580,7 @@
             this.txtcoef4.Name = "txtcoef4";
             this.txtcoef4.Size = new System.Drawing.Size(100, 20);
             this.txtcoef4.TabIndex = 44;
+            this.txtcoef4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef4_KeyPress);
             // 
             // label20
             // 
@@ -580,6 +597,7 @@
             this.txtdegree4.Name = "txtdegree4";
             this.txtdegree4.Size = new System.Drawing.Size(100, 20);
             this.txtdegree4.TabIndex = 43;
+            this.txtdegree4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree4_KeyPress);
             // 
             // label21
             // 
@@ -668,6 +686,7 @@
             this.txtcoef55.Name = "txtcoef55";
             this.txtcoef55.Size = new System.Drawing.Size(100, 20);
             this.txtcoef55.TabIndex = 62;
+            this.txtcoef55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef55_KeyPress);
             // 
             // label24
             // 
@@ -684,13 +703,15 @@
             this.txtdegree55.Name = "txtdegree55";
             this.txtdegree55.Size = new System.Drawing.Size(100, 20);
             this.txtdegree55.TabIndex = 61;
+            this.txtdegree55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree55_KeyPress);
             // 
             // txtX5
             // 
-            this.txtX5.Location = new System.Drawing.Point(410, 283);
+            this.txtX5.Location = new System.Drawing.Point(410, 287);
             this.txtX5.Name = "txtX5";
             this.txtX5.Size = new System.Drawing.Size(100, 20);
             this.txtX5.TabIndex = 58;
+            this.txtX5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX5_KeyPress);
             // 
             // label25
             // 
@@ -707,6 +728,7 @@
             this.txtcoef5.Name = "txtcoef5";
             this.txtcoef5.Size = new System.Drawing.Size(100, 20);
             this.txtcoef5.TabIndex = 57;
+            this.txtcoef5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcoef5_KeyPress);
             // 
             // label26
             // 
@@ -723,6 +745,7 @@
             this.txtdegree5.Name = "txtdegree5";
             this.txtdegree5.Size = new System.Drawing.Size(100, 20);
             this.txtdegree5.TabIndex = 56;
+            this.txtdegree5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdegree5_KeyPress);
             // 
             // label27
             // 
