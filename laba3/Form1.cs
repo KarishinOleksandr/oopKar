@@ -110,7 +110,9 @@ namespace laba3
             public Rational(int numerator, int denominator)
             {
                 if (denominator == 0)
-                    throw new ArgumentException("Denominator cannot be zero.");
+                {
+                    MessageBox.Show("Domminator cannot be 0!!!");
+                }
 
                 int gcd = GCD(Math.Abs(numerator), Math.Abs(denominator));
                 Numerator = numerator / gcd;
@@ -210,6 +212,20 @@ namespace laba3
             lblResult.Text = "";
             label4.Text = "imaginary1";
             label5.Text = "imaginary2";
+            btnplus.Text = "+";
+            btnminus.Text = "-";
+            btnmulty.Text = "*";
+            btndivide.Text = "/";
+            label11.Text = "Numerator1";
+            label10.Text = "Numerator2";
+            label9.Text = "Result: ";
+            lblResult2.Text = "";
+            label7.Text = "Dominator1";
+            label6.Text = "Dominator2";
+            btnplus2.Text = "+";
+            btnminus2.Text = "-";
+            btnmulty2.Text = "*";
+            btndivide2.Text = "/";
         }
 
         private void btnplus_Click(object sender, EventArgs e)
@@ -273,6 +289,190 @@ namespace laba3
             else
             {
                 MessageBox.Show("Invalid input data!");
+            }
+        }
+
+        private void btnplus2_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txt1R.Text, out int real1) && int.TryParse(txt3R.Text, out int imaginary1) &&
+        int.TryParse(txt2R.Text, out int real2) && int.TryParse(txt4R.Text, out int imaginary2))
+            {
+                Pair pair1 = new Rational(real1, imaginary1);
+                Pair pair2 = new Rational(real2, imaginary2);
+                Pair resultAdd = pair1.Add(pair2);
+                lblResult2.Text = resultAdd.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Invalid input data!");
+            }
+        }
+
+        private void btnminus2_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txt1R.Text, out int real1) && int.TryParse(txt3R.Text, out int imaginary1) &&
+        int.TryParse(txt2R.Text, out int real2) && int.TryParse(txt4R.Text, out int imaginary2))
+            {
+                Pair pair1 = new Rational(real1, imaginary1);
+                Pair pair2 = new Rational(real2, imaginary2);
+                Pair resultAdd = pair1.Subtract(pair2);
+                lblResult2.Text = resultAdd.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Invalid input data!");
+            }
+        }
+
+        private void btndivide2_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txt1R.Text, out int real1) && int.TryParse(txt3R.Text, out int imaginary1) &&
+        int.TryParse(txt2R.Text, out int real2) && int.TryParse(txt4R.Text, out int imaginary2))
+            {
+                Pair pair1 = new Rational(real1, imaginary1);
+                Pair pair2 = new Rational(real2, imaginary2);
+                Pair resultAdd = pair1.Divide(pair2);
+                lblResult2.Text = resultAdd.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Invalid input data!");
+            }
+        }
+
+        private void btnmulty2_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txt1R.Text, out int real1) && int.TryParse(txt3R.Text, out int imaginary1) &&
+        int.TryParse(txt2R.Text, out int real2) && int.TryParse(txt4R.Text, out int imaginary2))
+            {
+                Pair pair1 = new Rational(real1, imaginary1);
+                Pair pair2 = new Rational(real2, imaginary2);
+                Pair resultAdd = pair1.Multiply(pair2);
+                lblResult2.Text = resultAdd.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Invalid input data!");
+            }
+        }
+
+        private void txt1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt1R_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt2R_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt3R_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
+            }
+        }
+
+        private void txt4R_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+                { return; }
+                if (e.KeyChar == '+' || e.KeyChar == '-')
+                { return; }
+                if (e.KeyChar == ',')
+                { return; }
+                if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+                { return; }
+                e.Handled = true;
             }
         }
     }
