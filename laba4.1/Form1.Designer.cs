@@ -123,12 +123,12 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1431, 598);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "task1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnOk3
             // 
-            this.btnOk3.Location = new System.Drawing.Point(559, 442);
+            this.btnOk3.Location = new System.Drawing.Point(643, 442);
             this.btnOk3.Name = "btnOk3";
             this.btnOk3.Size = new System.Drawing.Size(75, 23);
             this.btnOk3.TabIndex = 8;
@@ -140,7 +140,7 @@
             // 
             this.btnOk2.Location = new System.Drawing.Point(395, 442);
             this.btnOk2.Name = "btnOk2";
-            this.btnOk2.Size = new System.Drawing.Size(75, 23);
+            this.btnOk2.Size = new System.Drawing.Size(156, 23);
             this.btnOk2.TabIndex = 7;
             this.btnOk2.Text = "button2";
             this.btnOk2.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1431, 598);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "task2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -163,7 +163,7 @@
             this.ClientSize = new System.Drawing.Size(1463, 637);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lab4";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);

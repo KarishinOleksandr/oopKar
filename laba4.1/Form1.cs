@@ -39,7 +39,12 @@ namespace laba4._1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label1.Text = "Ваш масив: ";
+            label2.Text = "Result: ";
+            lblResult.Text = "";
+            btnOk1.Text = "Сума мінусових";
+            btnOk2.Text = "Сума після меншого";
+            btnOk3.Text = "Заміна";
         }
 
         private void btnOk1_Click(object sender, EventArgs e)
