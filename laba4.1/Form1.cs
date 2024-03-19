@@ -90,7 +90,7 @@ namespace laba4._1
 
                 double[] squaredNumbers = ReplaceNegativesWithSquares(numbers);
 
-                lblResult.Text = squaredNumbers.ToString();
+                lblResult.Text = string.Join(", ", squaredNumbers);
             }
             else
             {
