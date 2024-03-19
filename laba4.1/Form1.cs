@@ -113,6 +113,8 @@ namespace laba4._1
             { return; }
             if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
             { return; }
+            if (e.KeyChar == (char)Keys.Space)
+            { return; }
             e.Handled = true;
         }
     }
