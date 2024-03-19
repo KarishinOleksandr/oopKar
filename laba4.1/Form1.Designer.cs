@@ -73,6 +73,8 @@
             this.txtArray.Name = "txtArray";
             this.txtArray.Size = new System.Drawing.Size(100, 20);
             this.txtArray.TabIndex = 4;
+            this.txtArray.TextChanged += new System.EventHandler(this.txtArray_TextChanged);
+            this.txtArray.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtArray_KeyPress);
             // 
             // btnOk1
             // 

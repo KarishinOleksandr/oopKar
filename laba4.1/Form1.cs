@@ -97,5 +97,23 @@ namespace laba4._1
                 MessageBox.Show("Invalid input data!");
             }
         }
+
+        private void txtArray_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtArray_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            e.Handled = true;
+        }
     }
 }
