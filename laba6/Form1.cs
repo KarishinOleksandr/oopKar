@@ -38,8 +38,8 @@ namespace laba6
 
                 var result = ComplexNumberOperations.Distribute(A, B);
 
-                lblResult.Text = "{result.Item1}";
-                lblResult2.Text = "{result.Item2}";
+                lblResult.Text = $"{result.Item1}";
+                lblResult2.Text =  $"{result.Item2}";
             }
             catch (FormatException)
             {
