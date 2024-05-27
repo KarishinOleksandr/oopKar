@@ -79,5 +79,20 @@ namespace laba9._1
         {
 
         }
+
+        private void txtA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= '0') && (e.KeyChar <= '9'))
+            { return; }
+            if (e.KeyChar == '+' || e.KeyChar == '-')
+            { return; }
+            if (e.KeyChar == ',')
+            { return; }
+            if (e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete)
+            { return; }
+            if (e.KeyChar == (char)Keys.Space)
+            { return; }
+            e.Handled = true;
+        }
     }
 }

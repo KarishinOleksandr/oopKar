@@ -72,6 +72,7 @@
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 3;
             this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
             // btn1
             // 
