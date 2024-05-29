@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>laba8._2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\align_center.png" />
+    <None Remove="Images\align_left.png" />
+    <None Remove="Images\align_right.png" />
+    <None Remove="Images\disk.png" />
+    <None Remove="Images\folder.png" />
+    <None Remove="Images\insert_image.png" />
+    <None Remove="Images\text_bold.png" />
+    <None Remove="Images\text_italic.png" />
+    <None Remove="Images\text_underline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\align_center.png" />
+    <Resource Include="Images\align_left.png" />
+    <Resource Include="Images\align_right.png" />
+    <Resource Include="Images\insert_image.png" />
+    <Resource Include="Images\text_underline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\disk.png" />
+    <Resource Include="Images\folder.png" />
+    <Resource Include="Images\text_bold.png" />
+    <Resource Include="Images\text_italic.png" />
+  </ItemGroup>
+
+</Project>
