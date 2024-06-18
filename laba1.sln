@@ -34,6 +34,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba11", "laba11\laba11.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba13", "laba13\laba13.csproj", "{73602691-C4B1-4889-A441-4459A4C36654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba12", "Laba12\Laba12.csproj", "{39DDD7CF-6210-421F-BD0D-CD01D0EB1772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba14.1", "laba14.1\laba14.1.csproj", "{640ECF88-418D-476F-9209-05EA1495E75C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba16", "laba16\laba16.csproj", "{156D1443-FCFC-49A1-8375-7F13048ABF46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,9 +98,24 @@ Global
 		{73602691-C4B1-4889-A441-4459A4C36654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73602691-C4B1-4889-A441-4459A4C36654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73602691-C4B1-4889-A441-4459A4C36654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DDD7CF-6210-421F-BD0D-CD01D0EB1772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DDD7CF-6210-421F-BD0D-CD01D0EB1772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DDD7CF-6210-421F-BD0D-CD01D0EB1772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DDD7CF-6210-421F-BD0D-CD01D0EB1772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640ECF88-418D-476F-9209-05EA1495E75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640ECF88-418D-476F-9209-05EA1495E75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640ECF88-418D-476F-9209-05EA1495E75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640ECF88-418D-476F-9209-05EA1495E75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156D1443-FCFC-49A1-8375-7F13048ABF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156D1443-FCFC-49A1-8375-7F13048ABF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156D1443-FCFC-49A1-8375-7F13048ABF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156D1443-FCFC-49A1-8375-7F13048ABF46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{156D1443-FCFC-49A1-8375-7F13048ABF46} = {723A443E-BC53-4052-B78B-11E334A329F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F15DBA2B-3131-4F86-B14D-A0A0BEECC8A8}
